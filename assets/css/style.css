@@ -1161,6 +1161,12 @@ h3 {
 	}
 }
 
+.navbar-nav {
+	display: block;
+	margin-left: 60px;
+	margin-right: auto
+}
+
 /* Small devices (tablets, up to 768px) */
 @media (max-width: 768px) {
 
