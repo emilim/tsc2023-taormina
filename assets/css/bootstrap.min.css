@@ -7335,8 +7335,10 @@ button.close {
     margin-left: auto
 }
 
-.pull-right {
-    float: right !important
+@media (max-width: 768px) {
+    .pull-right {
+        float: right !important
+    }
 }
 
 .pull-left {
