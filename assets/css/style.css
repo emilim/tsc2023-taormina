@@ -250,7 +250,6 @@ body {
 
 p {
 	font-size: 17px;
-	color: rgb(33, 33, 33);
 }
 
 .head-box {
@@ -532,9 +531,6 @@ img {
 	max-width: 100%;
 }
 
-img.pull-right {
-	margin-left: 10px;
-}
 
 img.pull-left {
 	margin-right: 10px;
@@ -1118,6 +1114,7 @@ h3 {
 
 .news-box p {
 	color: #1E3434;
+
 }
 
 .news-box a {
