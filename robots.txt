@@ -1,0 +1,7 @@
+User-agent: Googlebot
+Disallow: /sample-page/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://tsc2023-taormina.it/sitemap.xml
