@@ -56,7 +56,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <p>Program</p>
                         </a></li>
                     <li><a href="registration.html">
-                            <p>Registration</p>
+                            <p>Submission & Registration</p>
                         </a></li>
                 </ul>
             </div>
@@ -152,7 +152,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <script src="assets/js/custom.js"></script>
     <script>
         jQuery(function () {
-
+            jQuery("#nav-placeholder").load("nav.html");
+            jQuery("#foot-placeholder").load("foot.html");
             jQuery('#camera_wrap_4').camera({
                 height: '600',
                 loader: 'bar',
