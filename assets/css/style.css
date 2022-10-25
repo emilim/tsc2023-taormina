@@ -1164,7 +1164,7 @@ h3 {
 @media (max-width: 1200px) {
 	.navbar-collapse ul {
 		text-align: right;
-		margin-right: 0px;
+		margin-right: 45px;
 	}
 }
 
@@ -1176,6 +1176,11 @@ h3 {
 
 .navbar-header {
 	position: absolute;
+}
+
+.navbar-toggle {
+	position: absolute;
+	right: 0;
 }
 
 /* Small devices (tablets, up to 768px) */
