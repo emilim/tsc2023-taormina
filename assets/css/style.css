@@ -1163,6 +1163,10 @@ h3 {
 	}
 }
 
+.navbar-collapse {
+	position: fixed;
+}
+
 @media (max-width: 1200px) {
 	.navbar-collapse ul {
 		text-align: right;
