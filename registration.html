@@ -18,57 +18,26 @@
 </head>
 
 <body>
-	<img src="assets/images/bg_header.jpg" alt="" style="  display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;">
-	<!-- /Header -->
-
-	<div class="navbar navbar-inverse">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span
-						class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-				<a class="navbar-brand" href="index.html">
-					<img src="assets/images/logo.png" alt="tsc logo"></a>
-			</div>
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav pull-right">
-					<li><a href="index.html">
-							<p>Home</p>
-						</a></li>
-					<li><a href="dates.html">
-							<p>Important Dates</p>
-						</a></li>
-					<li><a href="venue.html">
-							<p>Venue</p>
-						</a></li>
-					<li><a href="travel.html">
-							<p>Travel & Accomodation</p>
-						</a></li>
-					<li><a href="program.html">
-							<p>Program</p>
-						</a></li>
-					<li class="active"><a href="registration.html">
-							<p>Registration</p>
-						</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
 	<!-- /.navbar -->
+	<div id="nav-placeholder"></div>
 
 	<!-- container -->
 	<div class="container" style="margin-top: 95px;">
 		<div class="row">
 			<!-- Article content -->
 			<section class="col-sm-12 maincontent">
+				<h3 class="text-center">Abstract submission</h3>
+				<p>The deadline for abstract submission is 5th December.</p>
+				<div class="col-12 text-center">
+					<a href="https://r20.rs6.net/tn.jsp?f=001L2vsUBq8exzhAQHStbKDRIXm7x7U-zpY9ayoQr723PA4RObbiVkmdeOlqpLV9j-IJydMvhwaaAP65IiaKGXkgjmzP-MQaVLd5pSHjYpRDbmXntoquxzcSh3NMOs1zrX86KHI-zHJdxrUMWa6rYncUZsiOIlSILzoX3iOIv1AzeTCtxvb8OkKILsGH9D0zGjV&c=8h-2T18DWhy51aegCDPbj-xpfbW81E4VyQuYYbfjmMhReYwvxGMgTw==&ch=LD3Z38zhM0rQj_kxTOlgqpzvjXUYvMbiNeF5kC-7UPk5cseGsK8zFA=="
+						class="btn btn-info" role="button" target="_blank">abstract submission</a>
+				</div>
 				<h3 class="text-center">Registration</h3>
 				<p>
 					The registration fee is EURO 550 (EURO 450 for students).
-					Dinner tickets for the social event will be available for late purchase (EURO 80).
+					Dinner tickets for the social event will be available for late purchase.
 				</p>
-				<p><strong>Online registration page coming soon</strong></p>
+				<p><strong>23, January 2023 registration opens</strong></p>
 				<p>
 					A selection of hotels with pre-reserved rooms for accommodation will soon be available. However,
 					since Taormina is an ideal venue there are plenty of other options available and participants are
@@ -80,34 +49,9 @@
 		</div>
 	</div>
 	<!-- /container -->
+	<!-- footer -->
+	<div id="foot-placeholder"></div>
 
-
-
-	<footer id="footer" style="margin-top: 200px !important;">
-		<div class="footer2">
-			<div class="container">
-				<div class="row">
-
-					<div class="col-md-6 panel">
-						<div class="panel-body">
-							<p class="simplenav">
-								<a href="about.html">About</a>
-							</p>
-						</div>
-					</div>
-
-					<div class="col-md-6 panel">
-						<div class="panel-body">
-							<p class="text-right">
-								Copyright &copy; 2022. Template by <a href="http://github.com/emilim"
-									rel="develop">emilim</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
 
 
 
@@ -127,6 +71,10 @@
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/custom.js"></script>
 	<script>
+		jQuery(function () {
+			jQuery("#nav-placeholder").load("nav.html");
+			jQuery("#foot-placeholder").load("foot.html");
+		});
 		jQuery(function () {
 
 			jQuery('#camera_wrap_4').camera({
