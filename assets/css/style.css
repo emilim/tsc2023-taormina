@@ -92,10 +92,7 @@ label {
 	border-radius: 0px;
 }
 
-.navbar-inverse .navbar-brand {
-	margin: 7px 0 0 0;
-	margin-left: -45px;
-}
+
 
 .navbar-inverse .navbar-brand img {
 	width: 171px;
@@ -1164,10 +1161,6 @@ h3 {
 	}
 }
 
-.navbar-nav {
-	position: absolute;
-}
-
 @media (max-width: 1200px) {
 	.navbar-collapse ul {
 		text-align: right;
@@ -1178,7 +1171,12 @@ h3 {
 .navbar-nav {
 	display: block;
 	margin-left: 50px;
-	margin-right: auto
+	margin-right: auto;
+}
+
+.navbar-inverse .navbar-brand {
+	margin: 7px 0 0 0;
+	margin-left: -45px;
 }
 
 /* Small devices (tablets, up to 768px) */
