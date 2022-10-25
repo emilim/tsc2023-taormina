@@ -249,6 +249,7 @@ header#head::after {
 	height: auto;
 	position: relative;
 	bottom: 5px;
+	right: 0;
 }
 
 body {
@@ -1176,6 +1177,8 @@ h3 {
 
 .navbar-header {
 	position: absolute;
+	left: 300px;
+	bottom: 20px;
 }
 
 .navbar-toggle {
