@@ -1174,9 +1174,8 @@ h3 {
 	margin-right: auto;
 }
 
-.navbar-inverse .navbar-brand {
-	margin: 7px 0 0 0;
-	margin-left: -45px;
+.navbar-header {
+	position: absolute;
 }
 
 /* Small devices (tablets, up to 768px) */
