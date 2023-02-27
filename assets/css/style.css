@@ -65,6 +65,7 @@ a:focus {
 }
 
 .navbar-nav>li>a {
+	font-size: 12px !important;
 	padding-top: 12px;
 	padding-bottom: 12px;
 	font-family: 'Oswald', sans-serif;
