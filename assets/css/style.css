@@ -1147,7 +1147,7 @@ h3 {
 /**
   MEDIA QUERIES
 */
-@media (max-width: 1205px) {
+@media (max-width: 1250px) {
 	#head.secondary {
 		height: 80px;
 		min-height: 80px;
@@ -1165,7 +1165,7 @@ h3 {
 }
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 1205px) {
+@media (min-width: 1250px) {
 	#quote-carousel {
 		margin-bottom: 0;
 		padding: 0 40px 30px 40px;
@@ -1173,7 +1173,7 @@ h3 {
 	}
 }
 
-@media (max-width: 1205px) {
+@media (max-width: 1250px) {
 	.navbar-collapse ul {
 		text-align: right;
 		margin-right: 45px;
@@ -1198,7 +1198,7 @@ h3 {
 }
 
 /* Small devices (tablets, up to 768px) */
-@media (max-width: 1205px) {
+@media (max-width: 1250px) {
 
 	/* Make the indicators larger for easier clicking with fingers/thumb on mobile */
 	#camera_wrap_4,
