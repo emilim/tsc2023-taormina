@@ -102,11 +102,25 @@ label {
 	border: 1px solid #ccc;
 	border-radius: 0px;
 }
-
+/*
 .navbar-collapse{
 	margin-left: 150px !important;
 }
-
+*/
+.myMenu{
+	display: flex; 
+	justify-content: center;
+}
+@media (max-width: 1200px) {
+	.myMenu{
+		display: block; 
+	}
+	.navbar-header{
+		top: 0 !important;
+		margin-top: 20px !important;
+	}
+}
+	
 .navbar-inverse .navbar-brand img {
 	width: 171px;
 }
