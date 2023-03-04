@@ -103,7 +103,9 @@ label {
 	border-radius: 0px;
 }
 
-
+.navbar-collapse{
+	margin-left: 100px !important;
+}
 
 .navbar-inverse .navbar-brand img {
 	width: 171px;
