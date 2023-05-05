@@ -16,8 +16,9 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
 </head>
+
 <body>
-    <img src="assets/images/bg_header.jpg" alt="" style="  display: block;
+	<img src="assets/images/bg_header.jpg" alt="" style="  display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;">
@@ -49,50 +50,94 @@
 					<li><a href="registration.html">
 							<p>Login & Extras</p>
 						</a></li>
-                    <li class="active"><a href="challenge.html">
-                            <p>Challenge</p>
-                        </a></li>
+					<li class="active"><a href="challenge.html">
+							<p>Challenge</p>
+						</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
 	<!-- /.navbar -->
-    <section class="container" style="margin-top: 100px;">
-        <h3 class="text-center">Consciousness Challenge</h3>
-    </section>
+	<section class="container" style="margin-top: 110px; width: 500px;">
+		<img src="assets/images/challenge.jpg" alt="" style="display: block;">
+		<h3 class="text-center">Consciousness Challenge</h3>
+	</section>
+
+
 
 	<div id="codiceValido" style="display: none;">
-        <section class="container" style="margin-bottom: 500px;">
-            <h4 class="text-center">What theory most convinces you?</h4>
-            <div id="domanda" class="text-center">
-                <ul>
-                    <li><input type="radio" name="risposta" value="QM">QM</li>
-                    <li><input type="radio" name="risposta" value="IIT">IIT</li>
-                    <li><input type="radio" name="risposta" value="OOO">OOO</li>
-                    <li><input type="radio" name="risposta" value="MOI">MOI</li>
-                </ul>
-                <input type="button" value="send" onclick="inviaRisposta()">
-            </div>
-            <div id="risposta"></div>
-        </section>
+		<section class="container" style="margin-bottom: 500px;">
+			<h4 class="text-center">What theory most convinces you?</h4>
+			<div id="domanda" class="text-center">
+				<ul>
+					<li><input type="radio" name="risposta" value="QM">QM</li>
+					<li><input type="radio" name="risposta" value="IIT">IIT</li>
+					<li><input type="radio" name="risposta" value="OOO">OOO</li>
+					<li><input type="radio" name="risposta" value="MOI">MOI</li>
+				</ul>
+				<input type="button" value="send" onclick="inviaRisposta()">
+			</div>
+			<div id="risposta"></div>
+		</section>
 	</div>
 	<div id="codiceNonValido" style="display: none;">
-        <section class="container" style="margin-bottom: 500px;">
-            <p>To access this page you need a valid code. Please insert your code below or scan the QR code.</p>
+		<section class="container" style="margin-bottom: 50px;">
+			<p>
+				This year, we've decided to try something new and let TSC2023 participants choose the most convincing
+				solution to the problem of consciousness. Similar to what has been done at other famous conferences
+				regarding preferred interpretations of quantum mechanics or the origin of the universe, we'll ask you to
+				vote for which theory you think is most likely to explain consciousness! For simplicity, you'll need to
+				choose from this list selected by the TSC2023 scientific committee!<br>
+				Vote for the best theory of consciousness!<br><br>
+
+				When you arrive at check-in, you'll be given a paper ballot with two codes (or two QR codes) to vote on
+				this page. This way, each participant can express two preferences. Please remember, you can only use the
+				codes once.
+				<br><br>
+				The page to vote will be active as of May 22 8:00 am!
+				<br><br>
+				On Saturday the 27th, at the end of the conference, we'll announce the rankings and select the top three
+				theories that have won your trust during the conference. This is the Consciousness Challenge!!!
+				<br><br>
+				Here's the list of theories you can vote for, handpicked by your beloved organizers with no
+				room for dispute:<br>
+				<strong>
+			<ol style="font-size: 17px;margin-bottom: 40px;">
+				<li>Mind-Brain Identity Theory (MBI)</li>
+				<li>Mind-Object Identity Theory (MOI)</li>
+				<li>Cartesian Dualism of substance</li>
+				<li>Integrated Information Theory (IIT)</li>
+				<li>Global Neuronal Workspace (GNWT)</li>
+				<li>Predictive Processing</li>
+				<li>Higher Order Theories (HOT)</li>
+				<li>Quantum Pan-Protopsychism</li>
+				<li>Classic Idealism</li>
+				<li>Quantum Theory (ORCH OR)</li>
+				<li>Illusionism/Eliminativism</li>
+				<li>Russellian Monism</li>
+				<li>Panpsychism</li>
+				<li>Social Approaches (SAC)</li>
+				<li>Dual Aspect Monism</li>
+				<li>Chalmers's Information</li>
+			</ol>
+		</strong>
+			</p>
+			<!--
             <form>
                 <label for="codice">Insert the code: </label>
                 <input type="text" id="codice" name="codice">
                 <input type="button" value="Verify" onclick="verificaCodice()">
             </form>
-        </section>
+		-->
+		</section>
 	</div>
 
 	<script>
-		window.onload = function() {
+		window.onload = function () {
 			verificaCodice();
 		};
 
-        function inviaRisposta() {
+		function inviaRisposta() {
 			var risposta = document.querySelector('input[name="risposta"]:checked');
 			if (!risposta) {
 				document.getElementById("risposta").innerHTML = "Select a theory.";
@@ -109,7 +154,7 @@
 			}
 
 			var xhr = new XMLHttpRequest();
-			xhr.onreadystatechange = function() {
+			xhr.onreadystatechange = function () {
 				if (this.readyState == 4 && this.status == 200) {
 					var codici = JSON.parse(this.responseText);
 					if (codici.includes(codice)) {
@@ -136,7 +181,7 @@
 
 
 
-    <footer id="footer">
+	<footer id="footer">
 		<div class="footer2">
 			<div class="container">
 				<div class="row">
@@ -193,4 +238,5 @@
 		});
 	</script>
 </body>
+
 </html>
