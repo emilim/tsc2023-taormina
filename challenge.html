@@ -3,9 +3,24 @@
 
 <html>
 <head>
-<meta http-equiv="refresh" content="0; url=ConsciousnessChallenge.htm" />
 </head>
 <body>
-    
+    <script>
+        function getUrlParameter(name) {
+			name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+			var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
+			var results = regex.exec(location.search);
+			return results === null ? null : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+
+        window.onload = function () {
+            var codice = getUrlParameter("codice");
+			if (!codice) {
+				location.href = "ConsciousnessChallenge.htm"
+			}
+			// document.getElementById("codiceValido").style.display = "block";
+			location.href = "https://consciousness-challenge.vercel.app/?codice=" + codice;
+        }
+    </script>
 </body>
 </html>
