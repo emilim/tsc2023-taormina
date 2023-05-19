@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "taormina tsc 2023 - iulm"
+    "liveServer.settings.multiRootWorkspaceName": "taormina tsc 2023 - iulm",
+    "liveServer.settings.port": 5501
 }

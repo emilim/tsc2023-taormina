@@ -68,7 +68,10 @@
 
 	<div id="codiceValido" style="display: none;">
 		<section class="container" style="margin-bottom: 100px;">
-			<h4 class="text-center">What theory most convinces you? (you can vote only one time)</h4>
+			<h4 class="text-center">Congratulations! You've inserted a code or scanned a QR code! Now you can vote for your
+				favorite theory of consciousness!</h4>
+			<h3><a href="" target="_blank" style="display: block; text-align: center;">Click here to vote</a>
+			</h3><!--
 			<div id="domanda" class="text-center">
 				<ul>
 					<li><input type="radio" name="risposta" value="MBI">Mind-Brain Identity Theory (MBI)</li>
@@ -93,6 +96,7 @@
 				<input type="button" value="Send" onclick="inviaRisposta()">
 			</div>
 			<div id="risposta"></div>
+		-->
 		</section>
 	</div>
 	<div id="codiceNonValido" style="display: none;">
@@ -169,7 +173,8 @@
 				document.getElementById("codiceNonValido").style.display = "block";
 				return;
 			}
-
+			document.getElementById("codiceValido").style.display = "block";
+			/*
 			var xhr = new XMLHttpRequest();
 			xhr.onreadystatechange = function () {
 				if (this.readyState == 4 && this.status == 200) {
@@ -180,9 +185,11 @@
 						document.getElementById("codiceNonValido").style.display = "block";
 					}
 				}
+			
 			};
 			xhr.open("GET", "codici.json", true);
 			xhr.send();
+			*/
 		}
 
 		function getUrlParameter(name) {
