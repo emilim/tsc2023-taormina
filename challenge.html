@@ -16,7 +16,8 @@
         window.onload = function () {
             var codice = getUrlParameter("codice");
 			if (!codice) {
-				location.href = "ConsciousnessChallenge.htm"
+				location.href = "ConsciousnessChallenge.htm";
+                return;
 			}
 			// document.getElementById("codiceValido").style.display = "block";
 			location.href = "https://consciousness-challenge.vercel.app/?codice=" + codice;
