@@ -154,8 +154,6 @@ label {
 	z-index: 2;
 }
 
-#header-top .text {}
-
 #header-top .social {
 	margin: 5px 0;
 }
@@ -446,8 +444,6 @@ ul,
 	color: #606577;
 }
 
-.thumbnail .caption:hover {}
-
 .thumbnail .caption a {
 	font: 20px;
 }
@@ -524,7 +520,6 @@ div.hbox {
 	padding: 10px 15px;
 }
 
-.h-body {}
 
 .jumbotron {
 	background-color: #E0E0E0;
@@ -850,8 +845,6 @@ footer ul li {
 .isotopeWrapper article {
 	margin-bottom: 30px;
 }
-
-#portfolio {}
 
 #portfolio img {
 	width: 100%;
