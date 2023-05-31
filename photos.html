@@ -108,6 +108,11 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 	<script src="assets/js/bootstrap.min.js"></script>
 	<script src="assets/js/custom.js"></script>
 	<script>
+		window.onload = function() {
+			// window.open("https://tsc2023-taormina-photos.vercel.app/", '_blank');
+			location.href = "https://tsc2023-taormina-photos.vercel.app/";
+		}
+		
 		jQuery(function () {
 			jQuery("#nav-placeholder").load("nav.html");
 			jQuery("#foot-placeholder").load("foot.html");
@@ -122,7 +127,7 @@ License URL: https://creativecommons.org/licenses/by/3.0/
 			});
 
 		});
-
+		/*
         fetch('images.json')
             .then(response => response.json())
             .then(images => {
@@ -142,6 +147,7 @@ License URL: https://creativecommons.org/licenses/by/3.0/
                 });
             })
             .catch(error => console.error('Error:', error));
+			*/
 	</script>
     <style>
         .gallery {
